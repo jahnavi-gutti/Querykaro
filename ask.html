@@ -1,44 +1,82 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<style type="text/css">
-		 #h{
-			background-color: skyblue;	
-			padding:1px ;
+		#h {
+			margin: 5px;
+			background-color: skyblue;
+			padding: 1px;
 		}
-		#j{
-			background-color: lightgrey;
-  	width: 300px;
-  	border: 15px solid darkcyan;
-  	padding: 50px;
-   	margin: auto;
 
-		}
-		#b{
+
+		#b {
 			background-color: whitesmoke;
 
 		}
-
-
 	</style>
-<body>
-	<div id="h">
-		<h1>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Ask question</h1>
-	</div>
-	<div id="b">
-		<h1 align="center" >What is your question?</h1>
-		&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-		<input 
-		 type="name" size="80%"width="50%">
-		<img src="img/search.png" class="img-responsive" alt="" width="25" height="25" align="center"> </img><br><br><br>
-		<div id="j" size="70%" >
-			<p>Registered users can ask questions, leave comments, and earn points for submitting new answers.</p>
-			<button style="background-color: skyblue; margin: auto;">JOIN NOW</button>
-		</div>
-		
-	</div>
 
+<body>
+	<header>
+		<div id="logo-container">
+			<img src="img/logo-modified.png" class="img-responsive" alt="" width="75" height="75">
+			<h1 style="color:white;" id="title">QueryKaro</h1>
+		</div>
+		<div>
+			<label id="search-container">
+				<input type="text" placeholder="Search">
+				<img src="img/search.png" class="img-responsive" alt="" width="25" height="25">
+			</label>
+		</div>
+		<div id="register-login-container">
+			<label>
+				<a href="logup.html">Register</a>
+			</label>
+			<label>
+				<a href="#f.html">
+					<select>
+						<option>Login</option>
+						<option>Login with Google</option>
+					</select>
+				</a>
+			</label>
+		</div>
+	</header>
+	<main>
+		<div id="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#recent-questions.html">Recent Questions</a></li>
+				<li><a href="#frequent-questions.html">Frequent Questions</a></li>
+				<li><a href="ask.html">Ask Question</a></li>
+				<li>
+					<a href="share.html">Share Your Experience</a>
+				</li>
+				<li>
+					<a href="#related-questions.html">Related Questions</a>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="h">
+				<h1 id="ask-question-title">Ask question</h1>
+			</div>
+			<div id="b">
+				<h1 id="ask-question-text">What is your question?</h1>
+				<textarea style="height: 40px;width: 80%; font-size: 20px; overflow-y: scroll;"></textarea>
+				<div id="join-box">
+					<p>Registered users can ask questions, leave comments, and earn points for submitting new answers.
+					</p>
+					<div id="join-button-wrapper"><button>JOIN NOW</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
+
 </html>
