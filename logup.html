@@ -1,38 +1,97 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+  <link rel="stylesheet" href="css/style.css">
+
   <title></title>
   <style type="text/css">
-    
-    body{
+    #content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       background-image: url('img/bg.jpeg');
       background-repeat: no-repeat;
       background-size: 100% 100%;
       background-attachment: fixed;
+      height: 90vh;
     }
   </style>
 </head>
+
 <body>
-  &nbsp&nbsp&nbsp&nbsp&nbsp
-  <div align="center"  >      
-      <table>
-        <tr><td><h3 style="color:white;">Username or email<h3></td></tr>
-        <tr><td><input type="name" style="font-size: 18pt; height: 20px; width:180px;"></td></tr>
-        <tr><td><h3 style="color: white">password<h3></td></tr>
-        <tr><td><input type="password"style="font-size: 18pt; height: 20px; width:180px;"></td></tr>
-        <tr><td><a href="forgot.html" target="f3" ><small>Forgotten password?</small></a></td></tr>
-        <tr>
-          <td><input type="checkbox" >
-          <label for="vehicle1"> Remember Me</label><br></td>
-        <td><button type="button">Login</button></td>
-        </tr>
-        
-      </table>
-
-  </div>
-
+  <header>
+    <div id="logo-container">
+      <img src="img/logo-modified.png" class="img-responsive" alt="" width="75" height="75">
+      <h1 style="color:white;" id="title">QueryKaro</h1>
+    </div>
+    <div>
+      <label id="search-container">
+        <input type="text" placeholder="Search">
+        <img src="img/search.png" class="img-responsive" alt="" width="25" height="25">
+      </label>
+    </div>
+    <div id="register-login-container">
+      <label>
+        <a href="logup.html">Register</a>
+      </label>
+      <label>
+        <a href="#f.html" >
+          <select>
+            <option>Login</option>
+            <option>Login with Google</option>
+          </select>
+        </a>
+      </label>
+    </div>
+  </header>
+  <main>
+    <div id="nav-links">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#recent-questions.html">Recent Questions</a></li>
+        <li><a href="#frequent-questions.html">Frequent Questions</a></li>
+        <li><a href="ask.html">Ask Question</a></li>
+        <li>
+          <a href="share.html">Share Your Experience</a>
+        </li>
+        <li>
+          <a href="#related-questions.html">Related Questions</a>
+        </li>
+      </ul>
+    </div>
+    <div id="content">
+      <div align="center">
+        <table>
+          <tr>
+            <td>
+              <h3 style="color:white;">Username or Email<h3>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="name" style="font-size: 18pt; height: 20px; width:180px;"></td>
+          </tr>
+          <tr>
+            <td>
+              <h3 style="color: white">Password<h3>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="password" style="font-size: 18pt; height: 20px; width:180px;"></td>
+          </tr>
+          <tr>
+            <td><a href="forgot.html" target="f3"><small>Forgot password?</small></a></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox">
+              <label for="vehicle1"> Remember Me</label><br></td>
+            <td><button type="button">Login</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </main>
 </body>
 </html>

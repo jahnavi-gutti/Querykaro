@@ -1,27 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
 	<title></title>
 </head>
+
 <body>
-	<div style="background-color:skyblue;">
-		<h1>Share your experience</h1>
-	</div>
-	<div>
-		<h2>Title</h2>
-		<textarea rows=2px cols=80px></textarea><br>
-	</div>
-	<h2> Story</h2>
-	<div>
-		<textarea rows=15px cols=140px
-		></textarea>
-	</div>
-	&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
-	<button style="background-color: lightgreen;  "><b >SAVE</b></button>
-	<button style="background-color: indianred; color: white;"><b>DISCARD</b></button>
-	
+	<header>
+		<div id="logo-container">
+			<img src="img/logo-modified.png" class="img-responsive" alt="" width="75" height="75">
+			<h1 style="color:white;" id="title">QueryKaro</h1>
+		</div>
+		<div>
+			<label id="search-container">
+				<input type="text" placeholder="Search">
+				<img src="img/search.png" class="img-responsive" alt="" width="25" height="25">
+			</label>
+		</div>
+		<div id="register-login-container">
+			<label>
+				<a href="logup.html">Register</a>
+			</label>
+			<label>
+				<a href="#f.html">
+					<select>
+						<option>Login</option>
+						<option>Login with Google</option>
+					</select>
+				</a>
+			</label>
+		</div>
+	</header>
+	<main>
+		<div id="nav-links">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="#recent-questions.html">Recent Questions</a></li>
+				<li><a href="#frequent-questions.html">Frequent Questions</a></li>
+				<li><a href="ask.html">Ask Question</a></li>
+				<li>
+					<a href="share.html">Share Your Experience</a>
+				</li>
+				<li>
+					<a href="#related-questions.html">Related Questions</a>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<div style="background-color:skyblue; margin: 5px">
+				<h1 id = "share-text">Share your experience</h1>
+			</div>
+			<div>
+				<h2>Title</h2>
+				<textarea style="width: 90%; height: 50px; font-size: 20px; overflow-y: scroll;"></textarea>
+			</div>
+			<h2> Story</h2>
+			<div>
+				<textarea style="width: 90%; height: 200px; font-size: 15px;  overflow-y: scroll;"></textarea>
+			</div>
+			<button style="background-color: lightgreen;  "><b>SAVE</b></button>
+			<button style="background-color: indianred; color: white;"><b>DISCARD</b></button>
+		</div>
+	</main>
 
 </body>
+
 </html>
